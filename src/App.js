@@ -6,6 +6,12 @@ import {Row,Col} from 'react-bootstrap';
 import Menu from "./components/Menu";
 import LeftSide from './components/LeftSide';
 import RightSide from './components/RightSide';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
   return (

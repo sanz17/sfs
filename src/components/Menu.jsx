@@ -30,7 +30,7 @@ const Menu = () => {
                   Add files
                 </Nav.Link>
                 <NavDropdown title="Existing user" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={"/"}>Login</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to={"/View"}>
                     My Account
                   </NavDropdown.Item>

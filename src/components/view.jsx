@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-const view = () => {
+const View = () => {
   return (
     <div>view</div>
   )
 }
+export default View
 
-export default view

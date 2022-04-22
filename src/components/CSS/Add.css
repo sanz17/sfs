@@ -1,0 +1,14 @@
+.text-center{
+    margin: 5% 5% 0 5%;
+    vertical-align: middle;
+}
+
+.choose_file::file-selector-button {
+    background-color: aquamarine;
+    padding: 2% 4% 2% 4%;
+    border-radius: 5px;
+}
+
+.choose_file::file-selector-button:hover {
+    background-color: red;
+}

@@ -40,7 +40,7 @@ const Menu = () => {
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">Sign in with another account</Nav.Link>
+                <Nav.Link as={Link} to={"/"}>Sign in with another account</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

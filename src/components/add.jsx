@@ -4,22 +4,21 @@ import {Card, Button} from 'react-bootstrap'
 
 const Add = () => {
   const checkFile=()=>{
-      alert("Chose File");
+      alert("Please choose a File");
   }
   return (
     <>
-      <Card className="text-center">
-        <Card.Header>Featured</Card.Header>
+      <Card className="text-center" collapseOnSelect expand="lg"  variant="dark">
+        <Card.Header></Card.Header>
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
+          <Card.Title>ADD YOUR FILE BELOW !</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
+            We will securely store your file.
           </Card.Text>
           <input type="file"  className="choose_file"/> <br />
           <Button variant="primary" className="my-5" onClick={checkFile}>Upload File</Button>
         </Card.Body>
-        <Card.Footer className="text-muted">2 days ago</Card.Footer>
+        <Card.Footer className="text-muted"></Card.Footer>
       </Card>
     </>
   );

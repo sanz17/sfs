@@ -65,7 +65,7 @@ const LeftSide = () => {
           <Form.Control type="password" placeholder="Password" onChange={handlePassword} value={password}/>
         </Form.Group>
         <Button variant="primary" type="Sign in" onClick={checkFields}>
-          Submit
+          Sign in
         </Button>
       </Form>
     </div>

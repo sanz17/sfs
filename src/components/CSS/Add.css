@@ -1,14 +1,16 @@
 .text-center{
     margin: 5% 5% 0 5%;
     vertical-align: middle;
-    background-color: antiquewhite;
-    text-emphasis-color: white;
+    background-color: rgb(255, 172, 251);
+    /* text-emphasis-color: white; */
 }
 
 .choose_file::file-selector-button {
-    background-color: rgb(105, 135, 217);
+    background-color: rgb(255, 255, 255);
     padding: 2% 4% 2% 4%;
     border-radius: 5px;
+    /* text-emphasis-color: blue; */
+    
 }
 
 .choose_file::file-selector-button:hover {

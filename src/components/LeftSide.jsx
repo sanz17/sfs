@@ -12,15 +12,15 @@ const LeftSide = () => {
   }
 
   const handleLastName = (event) => {
-    setFirstName(event.target.value);
+    setLastName(event.target.value);
   }
 
   const handleEmail = (event) => {
-    setFirstName(event.target.value);
+    setEmail(event.target.value);
   }
 
   const handlePassword = (event) => {
-    setFirstName(event.target.value);
+    setPassword(event.target.value);
   }
 
   const checkFields=() => {

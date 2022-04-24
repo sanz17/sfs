@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Row, Col } from "react-bootstrap";
+// import { Row, Col } from "react-bootstrap";
 import Menu from "./components/Menu";
-import LeftSide from "./components/LeftSide";
-import RightSide from "./components/RightSide";
+// import LeftSide from "./components/LeftSide";
+// import RightSide from "./components/RightSide";
 import Add from "./components/Add";
 import Home from "./components/Home";
 // import View from "./components/View";

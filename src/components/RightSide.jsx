@@ -5,6 +5,7 @@ const RightSide = () => {
   return (
     <div>
         <Image src='./img/imgthree.png' thumbnail style={{border:"none"}} />
+        
     </div>
   )
 }

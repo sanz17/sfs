@@ -67,7 +67,7 @@ const Menu = () => {
                   <Nav.Link as={Link} to={"/View"}>
                     View my files
                   </Nav.Link>
-                  <Nav.Link href="#action3">My downloads</Nav.Link>
+                  <Nav.Link as={Link} to={"/View"}>My downloads</Nav.Link>
                 </Nav>
                 <Form className="d-flex">
                   <FormControl

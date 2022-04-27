@@ -14,6 +14,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomePageComponent from "./components/HomePageComponent";
+import View from "./components/View";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<HomePageComponent />}></Route>
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Add" element={<Add />}></Route>
+          <Route path="/View" element={<View />}></Route>
         </Routes>
       </BrowserRouter>
       

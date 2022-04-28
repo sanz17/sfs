@@ -2,11 +2,32 @@ import React from "react";
 import "./CSS/Add.css";
 import { Card, Button, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import { Row} from "react-bootstrap";
+import axios from "axios";
+import { Row } from "react-bootstrap";
 
 const Add = () => {
+  const [file, setFile] = React.useState(null);
   const checkFile = () => {
-    alert("Please choose a File");
+    if (file === null) {
+      alert("Please select a file");
+    } else {
+      console.log(file.name)
+      const formData = new FormData();
+      formData.append("file", file, file.name);
+      formData.append("user", 1)
+      axios
+        .post("http://localhost:8000/secure/files/", formData)
+        .then((res) => {
+          alert("File uploaded");
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
+  const onFileChange = (e) => {
+    setFile(e.target.files[0]);
   };
   return (
     <>
@@ -22,7 +43,12 @@ const Add = () => {
             <Card.Body>
               <Card.Title>ADD YOUR FILE BELOW !</Card.Title>
               <Card.Text>We will securely store your file.</Card.Text>
-              <input type="file" className="choose_file" /> <br />
+              <input
+                type="file"
+                className="choose_file"
+                onChange={onFileChange}
+              />{" "}
+              <br />
               <Button variant="primary" className="my-5" onClick={checkFile}>
                 Upload File
               </Button>
@@ -31,7 +57,7 @@ const Add = () => {
           </Card>
         </Col>
         <Col>
-          <Image src='./img/imgfour.png' thumbnail style={{border:"none"}} />
+          <Image src="./img/imgfour.png" thumbnail style={{ border: "none" }} />
         </Col>
       </Row>
     </>

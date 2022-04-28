@@ -5,16 +5,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import Menu from "./components/Menu";
 // import LeftSide from "./components/LeftSide";
 // import RightSide from "./components/RightSide";
-import Add from "./components/Add";
-import Home from "./components/Home";
+import Add from "./components/add";
+import Home from "./components/home";
 // import View from "./components/View";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePageComponent from "./components/HomePageComponent";
-import View from "./components/View";
+import View from "./components/view";
 
 function App() {
   return (
@@ -28,7 +24,6 @@ function App() {
           <Route path="/View" element={<View />}></Route>
         </Routes>
       </BrowserRouter>
-      
     </>
   );
 }
